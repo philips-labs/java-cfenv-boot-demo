@@ -1,4 +1,4 @@
-# cfdemo-java-cfenv
+# java-cfenv-boot demo
 Example Kotlin project that uses [java-cfenv-boot](https://github.com/pivotal-cf/java-cfenv) to
 to autoconfigure datasources from HSDP RDS service broker
 
