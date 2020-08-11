@@ -8,7 +8,7 @@ should be trivial to configure.
 # details
 
 The [HSDPPostgresEnvProcessor](src/main/kotlin/com/terrakube/cfdemo/HSDPPostgresEnvProcessor.kt) class
-demostrates how to implement [CfEnvProcessor](https://github.com/pivotal-cf/java-cfenv/blob/master/java-cfenv-boot/src/main/java/io/pivotal/cfenv/spring/boot/CfEnvProcessor.java) in order to discover and use the service broker properties.
+demonstrates how to implement [CfEnvProcessor](https://github.com/pivotal-cf/java-cfenv/blob/master/java-cfenv-boot/src/main/java/io/pivotal/cfenv/spring/boot/CfEnvProcessor.java) in order to discover and use the service broker properties.
 
 It's crucial to add your custom class to [spring.proprties](src/main/resources/META-INF/spring.factories). In this example
 the entry looks like:
