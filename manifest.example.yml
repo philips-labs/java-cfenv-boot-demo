@@ -1,0 +1,17 @@
+applications:
+- name: cfdemo
+  path: target/cfdemo-0.0.1-SNAPSHOT.jar
+  buildpacks:
+  - java_buildpack
+  disk_quota: 1G
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ "jre": { version: 11.+ } }'
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ "enabled": false }'
+    SPRING_PROFILES_ACTIVE: cloud
+  instances: 1
+  memory: 1G
+  routes:
+  - route: my-cfdemo.cloud.pcftest.com
+  services:
+  - postgres-grafana
+  stack: cflinuxfs3
